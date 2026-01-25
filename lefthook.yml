@@ -1,0 +1,18 @@
+# Lefthook configuration
+# https://github.com/evilmartians/lefthook
+
+pre-commit:
+  parallel: true
+  commands:
+    typecheck:
+      glob: "*.{ts,tsx}"
+      run: pnpm typecheck
+    lint:
+      glob: "*.{ts,tsx,js,jsx}"
+      run: pnpm lint {staged_files}
+    format:
+      glob: "*.{ts,tsx,js,jsx,json,css,md}"
+      run: pnpm format {staged_files}
+    test:
+      glob: "*.{ts,tsx}"
+      run: pnpm test --run
