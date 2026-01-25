@@ -41,8 +41,8 @@
     "katex": "^0.16.11"
   },
   "devDependencies": {
-    "@types/katex": "^0.16.7",
-    "@types/markdown-it": "^14.1.1",
+    "@types/katex": "^0.16.8",
+    "@types/markdown-it": "^14.1.2",
     "markdown-it": "^14.1.0"
   },
   "publishConfig": {
