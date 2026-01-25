@@ -16,7 +16,6 @@ logs
 # Misc
 .DS_Store
 .idea
-.vscode
 
 # Local env files
 .env

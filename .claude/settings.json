@@ -1,0 +1,43 @@
+{
+  "env": {
+    "ENABLE_LSP_TOOL": "true",
+    "ENABLE_EXPERIMENTAL_MCP_CLI": "true"
+  },
+  "permissions": {
+    "allow": [
+      "Bash(node:*)",
+      "Bash(npm --version:*)",
+      "Bash(pnpm:*)",
+      "Bash(npx:*)",
+      "Bash(pnpm create @tanstack/start@latest)",
+      "Bash(pnpm create:*)",
+      "Bash(pnpm add:*)",
+      "Bash(pnpm exec convex dev:*)",
+      "Bash(pnpm test:*)",
+      "Bash(git commit:*)",
+      "Bash(git add:*)",
+      "Bash(pnpm dev)",
+      "Bash(git checkout:*)",
+      "Bash(pnpm info:*)",
+      "Bash(pnpm list:*)",
+      "Bash(npx tsc:*)",
+      "Read(//private/tmp/claude/-Users-nikitafedorov-projects-ielts-writing-band-9/tasks/**)",
+      "Bash(openssl rand:*)",
+      "Bash(claude mcp --help:*)",
+      "WebSearch",
+      "mcp__filesystem__directory_tree",
+      "mcp__filesystem__list_directory",
+      "mcp__filesystem__read_text_file",
+      "mcp__filesystem__read_multiple_files",
+      "Bash(find:*)",
+      "mcp__filesystem__write_file",
+      "Bash(pnpm vitest run:*)",
+      "Bash(ls:*)",
+      "Bash(curl:*)",
+      "WebFetch(domain:docs.convex.dev)",
+      "Bash(pnpm typecheck:*)"
+    ]
+  },
+  "enabledMcpjsonServers": ["fetch", "sequential-thinking", "filesystem", "playwright", "ESLint"],
+  "enableAllProjectMcpServers": true
+}
