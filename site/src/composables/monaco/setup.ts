@@ -1,4 +1,6 @@
 import type * as Monaco from "monaco-editor";
+// import EditorWorker from "monaco-editor/esm/vs/editor/editor.worker?worker";
+// import CssWorker from "monaco-editor/esm/vs/language/css/css.worker?worker";
 
 declare global {
   interface Window {
@@ -31,8 +33,8 @@ export const setupMonaco = async () => {
 
   // Import editor and css workers
   const [{ default: EditorWorker }, { default: CssWorker }] = await Promise.all([
-    import("monaco-editor/esm/vs/editor/editor.worker?worker"),
-    import("monaco-editor/esm/vs/language/css/css.worker?worker")
+    import("monaco-editor/esm/vs/editor/editor.worker.js?worker"),
+    import("monaco-editor/esm/vs/language/css/css.worker.js?worker")
   ]);
 
   window.MonacoEnvironment = {

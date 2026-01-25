@@ -78,12 +78,8 @@ export default defineNuxtConfig({
       chunkSizeWarningLimit: 4096
     },
     optimizeDeps: {
-      include: [
-        "localforage",
-        "markdown-it",
-        "katex",
-        "monaco-editor"
-      ]
+      include: ["axe-core"],
+      exclude: ["monaco-editor"]
     }
   }
 });
