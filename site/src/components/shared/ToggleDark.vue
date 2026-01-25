@@ -41,7 +41,7 @@ const _findModeIndex = (mode: string) => modes.findIndex((m) => m.value === mode
 
 const _findNeighbourMode = (mode: string, position: -1 | 1) => {
   const index = _findModeIndex(mode);
-  return modes[(modes.length + index + position) % modes.length].value;
+  return modes[(modes.length + index + position) % modes.length]!.value;
 };
 
 const switchMode = () => {

@@ -105,7 +105,7 @@ export class MarkdownService {
       frontMatter.name ? `<h1>${frontMatter.name}</h1>\n` : "",
       (frontMatter.header ?? [])
         .map((item, i, array) =>
-          this._renderHeaderItem(item, i !== array.length - 1 && !array[i + 1].newLine)
+          this._renderHeaderItem(item, i !== array.length - 1 && !array[i + 1]?.newLine)
         )
         .join("\n")
     ].join("");

@@ -31,10 +31,12 @@ pnpm lint
 ## Architecture
 
 **Monorepo structure** using pnpm workspaces:
+
 - `site/` - Main Nuxt 3 application
 - `packages/` - Utility packages published under `@ohmycv/` namespace
 
 **Tech stack:**
+
 - Nuxt 3 + Vue 3 + TypeScript
 - UnoCSS (with Tailwind presets) + Radix Vue + shadcn-nuxt for UI
 - Monaco Editor for code editing
@@ -42,6 +44,7 @@ pnpm lint
 - localforage for browser storage
 
 **Key site directories (`site/src/`):**
+
 - `pages/` - Nuxt pages (dashboard at `/`, editor at `/editor`)
 - `components/ui/` - shadcn UI components (prefixed with `Ui`)
 - `components/editor/` - Editor and preview components
@@ -50,6 +53,7 @@ pnpm lint
 - `utils/markdown.ts` - MarkdownService class that chains markdown-it plugins
 
 **Utility packages (`packages/`):**
+
 - `markdown-it-katex` - LaTeX math rendering
 - `markdown-it-cross-ref` - Cross-references for academic CVs
 - `markdown-it-latex-cmds` - LaTeX commands (`\newpage`, `\\[10px]`)
@@ -64,6 +68,7 @@ pnpm lint
 ## Environment Variables
 
 Create `site/.env` for Google Fonts support:
+
 ```
 NUXT_PUBLIC_GOOGLE_FONTS_KEY="YOUR_API_KEY"
 ```

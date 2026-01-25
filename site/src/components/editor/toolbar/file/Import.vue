@@ -71,15 +71,18 @@ const service = useMachine(fileUpload.machine, {
   id: "import-dialog",
   accept: ".md",
   onFileAccept: ({ files }) => {
+    const file = files[0];
+    if (!file) return;
+
     const reader = new FileReader();
 
     reader.onloadend = () => {
       const content = reader.result as string;
       setAndSyncToMonaco("markdown", content);
     };
-    reader.readAsText(files[0]);
+    reader.readAsText(file);
 
-    localFile.value = files[0].name;
+    localFile.value = file.name;
     pastedURL.value = "";
   }
 });

@@ -107,7 +107,7 @@ onMounted(async () => {
     // @ts-expect-error: Chrome 103 Experimental
     window
       .queryLocalFonts()
-      .then((fonts) => {
+      .then((fonts: Array<{ family: string; fullName: string }>) => {
         const uniqFamily: Record<string, boolean> = {};
 
         for (const font of fonts) {
@@ -125,7 +125,7 @@ onMounted(async () => {
           });
         }
       })
-      .catch((error) => {
+      .catch((error: unknown) => {
         console.warn("Failed to query local fonts:", error);
         // Gracefully degrade - local fonts won't be available
       });

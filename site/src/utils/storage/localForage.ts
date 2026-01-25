@@ -121,7 +121,9 @@ export class LocalForageDbService implements DbService {
     const res = await this._getStorageIfIdExists(id, true);
 
     if (!res.data) return res;
-    else return this._success({ id, ...res.data[id] });
+    const resume = res.data[id];
+    if (!resume) return this._success(null);
+    return this._success({ id, ...resume } as DbResume);
   }
 
   public async update(data: DbResumeUpdate, newUpdateTime: boolean) {
@@ -129,16 +131,17 @@ export class LocalForageDbService implements DbService {
     if (res.error) return res;
 
     const storage = res.data!;
+    const existing = storage[data.id]!;
     const { id, ...updatedResume } = {
-      ...storage[data.id],
+      ...existing,
       ...data,
-      updated_at: newUpdateTime ? now().toString() : storage[data.id].updated_at
+      updated_at: newUpdateTime ? now().toString() : existing.updated_at
     };
 
-    storage[id] = updatedResume;
+    storage[id] = updatedResume as Omit<DbResume, "id">;
     await this._setItems(storage);
 
-    return this._success({ id, ...updatedResume });
+    return this._success({ id, ...updatedResume } as DbResume);
   }
 
   public async create(data: DbResumeEmpty | DbResume) {
@@ -180,11 +183,11 @@ export class LocalForageDbService implements DbService {
     if (res.error) return res;
 
     const storage = res.data!;
-    const deleted = copy(storage[id]);
+    const deleted = copy(storage[id]!);
 
     delete storage[id];
     await this._setItems(storage);
 
-    return this._success({ id, ...deleted });
+    return this._success({ id, ...deleted } as DbResume);
   }
 }

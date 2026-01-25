@@ -76,6 +76,14 @@ export default defineNuxtConfig({
   vite: {
     build: {
       chunkSizeWarningLimit: 4096
+    },
+    optimizeDeps: {
+      include: [
+        "localforage",
+        "markdown-it",
+        "katex",
+        "monaco-editor"
+      ]
     }
   }
 });

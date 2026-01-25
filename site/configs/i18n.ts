@@ -2,7 +2,6 @@ import type { NuxtI18nOptions } from "@nuxtjs/i18n";
 
 export const i18n: NuxtI18nOptions = {
   defaultLocale: "en",
-  lazy: true,
   strategy: "prefix_and_default",
   locales: [
     {
@@ -42,7 +41,7 @@ export const i18n: NuxtI18nOptions = {
       file: "ja.yaml"
     }
   ],
-  langDir: "i18n",
+  langDir: "../src/i18n",
   compilation: {
     strictMessage: false
   }

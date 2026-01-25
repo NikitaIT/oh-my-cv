@@ -24,7 +24,9 @@ export class StorageService {
     const { VERSION } = useConstant();
 
     this._version = VERSION.CURRENT;
-    this._db = AVAILABLE_SERVICES[service];
+    const db = AVAILABLE_SERVICES[service];
+    if (!db) throw new Error(`Unknown storage service: ${service}`);
+    this._db = db;
   }
 
   private _createEmptyResume(): DbResumeEmpty {
