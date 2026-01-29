@@ -73,7 +73,7 @@ Architected multi-chain security infrastructure for the exchange with the [faste
 - Wrote and deployed Solidity smart contracts accross **multiple EVM networks**
 
 **CTO**
-~ [VTargete](https://vtargete.ru/)
+~ [Targeting Platform](https://vtargete.ru/)
 ~ 02/2019 - 06/2022
 
 Built and scaled a B2B SaaS product from zero to monopoly.
