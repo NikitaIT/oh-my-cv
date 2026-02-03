@@ -203,9 +203,68 @@ Developed an application for cross-publishing for conferences:
 **Java Internship**, [Emergn](https://www.emergn.com/)
 ~ 2016
 
+## Games
+
+5 multiplayer games, 3 demos
+
+**[Golazo League](https://golazoleague-guest.vercel.app/)**
+~ Funtico
+~ 10/2024 - 03/2026
+
+Merge soccer balls to your heart's desire against the clock.
+
+**[Solitaire Slam](https://solitaire-guest-prod.vercel.app/)**
+~ Funtico
+~ 10/2024 - 03/2026
+
+PVP aspect adds a strategic edge to every single move.
+
+**[Bingo Rampage](https://game-bingo-guest.vercel.app/)**
+~ Funtico
+~ 10/2024 - 03/2026
+
+An exciting bingo adventure that transports you to a sun-kissed island paradise.
+
+- C#, .NET Core, Unity
+- [Fish Networking](https://fish-networking.com/), [EdgeGap](https://edgegap.com/)
+- Fastify, NodeJS
+
+**[Formula Funtico](https://formula.funtico.com/guestmode/)**
+~ Funtico
+~ 10/2024 - 01/2026
+
+Epic multiplayer races.
+
+- C#, .NET Core, Unity
+- [Mirror Networking](https://mirror-networking.com/), [Amazon GameLift](https://aws.amazon.com/gamelift/)
+- Fastify, NodeJS
+
+**[Godot SDK demo](https://godot.demo.gameloop.funtico.com/)**
+~ Funtico
+~ 08/2025 - 08/2025
+
+**[Unity SDK demo](https://games.gameloop.funtico.com/gl-demo/57f3e178/index.html)**
+~ Funtico
+~ 08/2025 - 08/2025
+
+**[HTML5 SDK demo](https://js.demo.gameloop.funtico.com/)**
+~ Funtico
+~ 08/2025 - 08/2025
+
+- C#, .NET Core, Fastify, NodeJS
+
+**[Tico Bar](https://funtico.com/games/tico-bar/media)**
+~ Funtico
+~ 06/2025 - 06/2025
+
+The premier slot machine on Web3 gaming platform.
+
+- PixiJS
+- Fastify, NodeJS
+
 ## Projects
 
-100+ web services & libraries, 20+ websites, 30+ landing pages, 5+ installable web apps, 4 games, 3 mobile apps, 1 desktop app.
+100+ web services & libraries, 20+ websites, 30+ landing pages, 5+ installable web apps, 3 mobile apps, 1 desktop app.
 
 **[Funtico](https://funtico.com/)**
 ~ Funtico
@@ -213,38 +272,6 @@ Developed an application for cross-publishing for conferences:
 
 - PHP, Laravel, NodeJS, Fastify
 - React, TypeScript
-
-**[Golazo League](https://golazoleague-guest.vercel.app/)** (Game)
-~ Funtico
-~ 10/2024 - 01/2026
-
-**[Solitaire Slam](https://solitaire-guest-prod.vercel.app/)** (Game)
-~ Funtico
-~ 10/2024 - 01/2026
-
-**[Formula Funtico](https://formula.funtico.com/guestmode/)** (Game)
-~ Funtico
-~ 10/2024 - 01/2026
-
-**[Bingo Rampage](https://game-bingo-guest.vercel.app/)** (Game)
-~ Funtico
-~ 10/2024 - 01/2026
-
-**[Godot SDK demo](https://godot.demo.gameloop.funtico.com/)** (Game)
-~ Funtico
-~ 08/2025 - 08/2025
-
-**[Unity SDK demo](https://games.gameloop.funtico.com/gl-demo/57f3e178/index.html)** (Game)
-~ Funtico
-~ 08/2025 - 08/2025
-
-**[HTML5 SDK demo](https://js.demo.gameloop.funtico.com/)** (Game)
-~ Funtico
-~ 08/2025 - 08/2025
-
-- C#, .NET Core, Unity
-- [Mirror](https://mirror-networking.com/) and [Fish Networking](https://fish-networking.com/)
-- Fastify, NodeJS
 
 **[Funtico GameDev platform](https://developers.funtico.com/)**
 ~ Funtico
@@ -256,6 +283,8 @@ Developed an application for cross-publishing for conferences:
 **[Funtico Gameloop](https://gameloop.funtico.com/)**
 ~ [Avalanche](https://www.avax.network/)
 ~ 09/2025 - 10/2025
+
+Website and 15+ games powered by a custom Identity, Scoring and Anti-cheat system
 
 - Golang
 - React, TypeScript, Tailwind
