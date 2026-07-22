@@ -80,6 +80,7 @@ Started and scaled a B2B SaaS product from zero to monopoly.
 - First **hires**; First **MVP**; First **Product-Market Fit**
 - Product had **25k DAU** on **free tier** and **3k DAU** on **$5 subscription** with **$1k expenses**
 - Product that everyone wants with **85% DAU/MAU rate**
+- With **$38M monthly cash flow** and **$500k/year in profit**
 - At scale of **1M writes per second**
 
 **Senior Software Engineer**
